@@ -152,7 +152,7 @@ post '/login' do
       data = url_escape_hash(request.POST)
       redirect to('/') if (usern == '') || (params[:password] == '')
 
-      user = "#{config_options['ldap_domain']}\\#{data['username']}"
+      user = "#{data['username']}@#{config_options['ldap_domain']}"
       ldap = Net::LDAP.new host: (config_options['ldap_dc']).to_s, port: 636, encryption: :simple_tls, auth: { method: :simple, username: user, password: params[:password] }
 
       if ldap.bind
@@ -163,6 +163,8 @@ post '/login' do
         @curr_session.save
 
         serpico_log('Successful LDAP login')
+      else
+        serpico_log("LDAP Authentication failed: " + ldap.get_operation_result.to_s)
       end
     end
   end
