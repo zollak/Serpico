@@ -37,7 +37,7 @@ rvm use 2.6.3
 apt-get -y install libsqlite3-dev libxslt-dev libxml2-dev zlib1g-dev gcc
 
 # Get and install the development version of Serpico
-git clone https://github.com/SerpicoProject/Serpico.git /opt/Serpico-Dev
+git clone https://github.com/zollak/Serpico.git /opt/Serpico-Dev
 cd /opt/Serpico-Dev/
 
 gem install bundler

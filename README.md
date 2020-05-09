@@ -9,7 +9,7 @@ Serpico is a penetration testing report generation and collaboration tool. It wa
 
 [Serpico Demo Video](https://www.youtube.com/watch?v=Sj7DkaQyx5o)
 
-[Additional Video Demos](https://github.com/SerpicoProject/Serpico/wiki#online-demo)
+[Additional Video Demos](https://github.com/zollak/Serpico/wiki#online-demo)
 
 ## Installation
 
@@ -34,13 +34,13 @@ docker run --name serpico -p 8443:8443 \
 
 More detailed information:
 
-* [Running Serpico From Docker](https://github.com/SerpicoProject/Serpico/wiki/Running-Serpico-From-Docker): The prefered method of installation. 
+* [Running Serpico From Docker](https://github.com/zollak/Serpico/wiki/Running-Serpico-From-Docker): The prefered method of installation. 
 
-* [Install Packaged Release](https://github.com/SerpicoProject/Serpico/releases): As of [v1.3.0](https://github.com/SerpicoProject/Serpico/releases/tag/1.3.0) (June 2018) we are no longer creating packaged builds.
+* [Install Packaged Release](https://github.com/zollak/Serpico/releases): As of [v1.3.0](https://github.com/zollak/Serpico/releases/tag/1.3.0) (June 2018) we are no longer creating packaged builds.
 
-* [Developer Build](https://github.com/SerpicoProject/Serpico/wiki/Developer-Build): Simple Instructions to build from clone
+* [Developer Build](https://github.com/zollak/Serpico/wiki/Developer-Build): Simple Instructions to build from clone
 
-* [Windows Developer Build](https://github.com/SerpicoProject/Serpico/wiki/Windows-Installation): Building Serpico from source on Windows; Docker is the easiest installation method.
+* [Windows Developer Build](https://github.com/zollak/Serpico/wiki/Windows-Installation): Building Serpico from source on Windows; Docker is the easiest installation method.
 
 ## About Serpico
 Serpico is at its core a report generation tool but targeted at creating information security reports. When building a report the user adds "findings" from the template database to the report. When there are enough findings, click 'Generate Report' to create the docx with your findings. The docx design comes from a Report Template which can be added through the UI; a default one is included. The Report Templates use a custom Markup Language to stub the data from the UI (i.e. findings, customer name, etc) and put them into the report.
@@ -64,12 +64,12 @@ The Meta language used for Microsoft Word was designed to be as simple as possib
 
 See also:
 
-* [Serpico Meta-Language In Depth](https://github.com/SerpicoProject/Serpico/wiki/Serpico-Meta-Language-In-Depth)
+* [Serpico Meta-Language In Depth](https://github.com/zollak/Serpico/wiki/Serpico-Meta-Language-In-Depth)
 
 
 ## Support
 * [Wiki](https://github.com/MooseDojo/Serpico/wiki): We try to add most common questions to the wiki.
 * [Slack](https://serpicoproject.slack.com)
-* [Issue](https://github.com/SerpicoProject/Serpico/issues/new) : If you have found a bug or would like a new feature
+* [Issue](https://github.com/zollak/Serpico/issues/new) : If you have found a bug or would like a new feature
 * [E-mail Support](https://www.serpicoproject.com/support/): For teams of users or template related questions
 
